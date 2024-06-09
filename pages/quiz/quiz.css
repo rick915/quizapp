@@ -19,7 +19,9 @@
     --bg-css: #e0fdef;
     --bg-js: #ebf0ff;
     --bg-acessibilidade: #f6e7ff;
-    --bg-descktop: url(../../assets/images/pattern-background-desktop-light.svg)
+    --bg-descktop: url(../../assets/images/pattern-background-desktop-light.svg);
+    --green: #26d782;
+    --red: #ee5454;
 }
 
 body.escuro{
@@ -150,6 +152,15 @@ main{
     border-radius: 12px;
     box-shadow: var(--shadow);
     color: var(--primary-text-color);   
+}
+
+.alternativas label:has(input:checked){
+    outline: 3px solid var(--purple);
+
+    & span {
+        background: var(--purple);
+        color: var(--white);
+    }
 }
 
 .alternativas input{
