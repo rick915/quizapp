@@ -19,6 +19,7 @@
     --bg-css: #e0fdef;
     --bg-js: #ebf0ff;
     --bg-acessibilidade: #f6e7ff;
+    --bg-descktop: url(assets/images/pattern-background-desktop-light.svg)
 }
 
 body{
@@ -132,4 +133,51 @@ main{
 
 .botao_acessibilidade div{
     background: var(--bg-acessibilidade) ;
+}
+
+@media(min-width: 1100px){
+    body{
+        background: var(--bg-descktop) var(--bg-color); 
+        background-size: cover;
+        background-repeat: no-repeat;
+     }
+ 
+     header{
+         margin-block: 81px;
+     }
+ 
+     main{
+         display: flex;
+         max-width: 1160px;
+         margin-inline: auto;
+     }
+ 
+    section{
+        width: 100%;
+    }
+
+    .boas_vindas{
+        font-size: 64px;
+        margin-bottom: 48px;
+    }
+
+    .boas_vindas p{
+        font-size: 26px;
+    }
+
+    .assuntos{
+        gap: 24px;
+    }
+
+    .assuntos button{
+        font-size: 20px;
+        padding: 20px;
+        gap: 32px;
+    }
+
+    .assuntos button div{
+        width: 56px;
+        height: 56px;
+        padding: 8px;
+    }
 }
